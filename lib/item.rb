@@ -34,4 +34,24 @@ class Nanoc3::Item
     date = Date.parse(self.readable? ? self.attributes[:date].to_s : self.parent.attributes[:date].to_s)
     date.year
   end
+
+  def route
+    @route_ ||= get_route
+  end
+
+  def base_route
+    @base_route_ ||= get_base_route
+  end
+
+private
+
+  def get_base_route
+    base = '/' + self.year.to_s + self.identifier.gsub(/\/articles/, '')
+  end
+
+  def get_route
+    base = self.base_route
+    self.readable? ? base + 'index.html' : base.chop + '.' + self.attributes[:extension]
+  end
+
 end

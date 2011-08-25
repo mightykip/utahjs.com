@@ -30,7 +30,7 @@ end
 
 compile '*' do
   # filter everything with erb
-  filter :erb
+  filter :erb if @item.readable?
 
   # then filter based on file extension
   case item[:extension]
@@ -63,8 +63,7 @@ route '/public/*' do
 end
 
 route '/articles/*' do
-  base = '/' + @item.year.to_s + @item.identifier.gsub(/\/articles/, '')
-  @item.readable? ? base + 'index.html' : base.chop + '.' + item[:extension]
+  @item.route
 end
 
 route '/pages/*' do

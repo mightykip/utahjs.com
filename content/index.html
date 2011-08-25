@@ -6,13 +6,14 @@ title: Home
   <h1>Articles</h1>
   <ul class=articleList>
     <% articles.each do |article| %>
-    <li>
-      <a href="<%= article.path %>">
-        <img src="<%= article.author.gravatar %>?s=75&&d=monsterid" width=75 height=75>
-        <%= article[:title].titleize %><br>
-        <small>By <%= article.author.name %>, published <%= Date.parse(article[:date].to_s).strftime("%Y-%m-%d") %></small>
-      </a>      
-    </li>
+      <% next if article.identifier == '/articles/example/' %>
+      <li>
+        <a href="<%= article.path %>">
+          <img src="<%= article.author.gravatar %>?s=75&amp;d=monsterid" width=75 height=75>
+          <%= article[:title].titleize %><br>
+          <small>By <%= article.author.name %>, published <%= Date.parse(article[:date].to_s).strftime("%Y-%m-%d") %></small>
+        </a>      
+      </li>
     <% end %>  
   </ul>
 </div>

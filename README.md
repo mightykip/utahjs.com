@@ -50,6 +50,8 @@ and then writing an article in markdown.
 
 4.  Push to your repository and send a pull request.
 
+You can look at `articles/example` to see how to use some of the helpers.
+
 Viewing Locally
 ---------------
 
