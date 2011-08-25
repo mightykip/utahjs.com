@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+gem "nanoc"
+gem "haml"
+gem "json"
+gem "kramdown"
+gem "titleize"
