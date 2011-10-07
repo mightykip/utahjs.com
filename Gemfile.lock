@@ -1,22 +1,29 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    adsf (1.0.1)
+      rack (>= 1.0.0)
     cri (2.0.2)
     haml (3.1.2)
     json (1.5.3)
     kramdown (0.13.3)
+    mime-types (1.16)
     nanoc (3.2.1)
       nanoc3 (>= 3.2.1)
     nanoc3 (3.2.1)
       cri (~> 2.0)
+    rack (1.3.4)
     titleize (1.2.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  adsf
   haml
   json
   kramdown
+  mime-types
   nanoc
+  rack
   titleize
