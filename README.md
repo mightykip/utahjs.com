@@ -67,14 +67,17 @@ installed on your machine.  If you're on Mac OS X, you've already got it.
         cd ${UTAHJS_HOME}
         git clone git@github.com:UtahJS/utahjs.com.git
 
-2.  Install the [bundler][bundler] ruby gem (Ubuntu / OS X)
+2.  Install rvm, ruby, and [bundler][bundler] (Ubuntu / OS X)
 
         cd ${UTAHJS_HOME}/utahjs.com
         bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
         rvm install ruby-1.8.7
-        rvm use ruby-1.8.7
-        rvm gemset create utahjs
-        rvm gemset use utahjs
+        echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
+        rvm use 1.8.7@utahjs --create
+        # that's just a shortcut for:
+        #   rvm use ruby--1.8.7
+        #   rvm gemset create utahjs
+        #   rvm gemset use utahjs
         rvm gemset list
         gem install bundler
 
