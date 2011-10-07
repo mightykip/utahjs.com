@@ -71,11 +71,11 @@ installed on your machine.  If you're on Mac OS X, you've already got it.
 
         cd ${UTAHJS_HOME}/utahjs.com
         bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
-        rvm install ruby-1.8.7
+        rvm install ruby-1.9.2
         echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
-        rvm use 1.8.7@utahjs --create
+        rvm use 1.9.2@utahjs --create
         # that's just a shortcut for:
-        #   rvm use ruby--1.8.7
+        #   rvm use ruby-1.9.2
         #   rvm gemset create utahjs
         #   rvm gemset use utahjs
         rvm gemset list
