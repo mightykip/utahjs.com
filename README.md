@@ -60,15 +60,26 @@ installed on your machine.  If you're on Mac OS X, you've already got it.
 
 ### Setup
 
+0.  Post to utahjs@googlegroups.com and ask for Push / Pull access
 1.  Fork the repository
-2.  Install the [bundler][bundler] ruby gem
 
-        $ gem install bundler
+        UTAHJS_HOME=~/Code
+        cd ${UTAHJS_HOME}
+        git clone git@github.com:UtahJS/utahjs.com.git
+
+2.  Install the [bundler][bundler] ruby gem (Ubuntu / OS X)
+
+        cd ${UTAHJS_HOME}/utahjs.com
+        bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
+        rvm install ruby-1.8.7
+        rvm use ruby-1.8.7
+        rvm gemset create utahjs-1.8.7
+        rvm gemset use utahjs-1.8.7
+        gem install bundler
 
 3.  Now, with bundler, install the gem dependencies
 
-        $ cd /path/to/utahjs.com
-        $ bundle install
+        bundle install
 
     All of the required ruby gems, including nanoc, should be installed locally
     for this project now.
@@ -79,18 +90,18 @@ Nanoc ships with several commands, but since the site uses bundler you
 need to prepend all commands with `bundle exec`.  For example, nanoc
 has a static file web server:
 
-    $ nanoc view
+    nanoc view
     # with bundler
-    $ bundle exec nanoc view
+    bundle exec nanoc view
 
 To compile the site:
 
-    $ bundle exec nanoc compile
+    bundle exec nanoc compile
 
 Autocompile compiles the site on each visit, so you don't have to compile after
 each change you make:
 
-    $ bundle exec nanoc autocompile
+    bundle exec nanoc autocompile
 
 Check out the [nanoc][nanoc] website to learn more about the platform utahjs.com is built on.
 
