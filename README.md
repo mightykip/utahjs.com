@@ -73,8 +73,8 @@ installed on your machine.  If you're on Mac OS X, you've already got it.
         bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
         rvm install ruby-1.8.7
         rvm use ruby-1.8.7
-        rvm gemset create utahjs-1.8.7
-        rvm gemset use utahjs-1.8.7
+        rvm gemset use utahjs --create
+        rvm gemset list
         gem install bundler
 
 3.  Now, with bundler, install the gem dependencies
