@@ -1,10 +1,7 @@
 # ----------------------------------------------------------------------
 # The redirect from /location -> /meetings
 # ----------------------------------------------------------------------
-<IfModule mod_rewrite.c>
-  RewriteCond ^(www.)?utahjs.com$
-  RewriteRule ^/location.*$ "http\:\/\/utahjs\.com\/meetings" [R=301,L]
-</IfModule>
+redirectpermanent /location /meetings
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users
