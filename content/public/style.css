@@ -167,6 +167,10 @@ table.info tr td.value {
 	padding-left: 20px;
 }
 
+.current {
+	color: green;
+}
+
 #footer {
   margin: 0;
   font-size: 80%;
