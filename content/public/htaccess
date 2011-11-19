@@ -2,6 +2,7 @@
 # The redirect from /location -> /meetings
 # ----------------------------------------------------------------------
 redirectpermanent /location /meetings
+redirectpermanent /call-for-papers /papers
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users
