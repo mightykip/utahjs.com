@@ -1,6 +1,6 @@
 --- 
 title: Join / Contribute
-order: 3
+order: 4
 ---
 
 * [Google Groups Mailing List](http://groups.google.com/group/utahjs)
