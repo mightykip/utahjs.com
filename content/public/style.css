@@ -158,11 +158,11 @@ table.info {
 	
 }
 
-table.info tr td {
+table.info tr:first-child {
 	font-weight: bold;
 }
 
-table.info tr td > td {
+table.info tr:last-child {
 	font-weight: normal;
 	padding-left: 20px;
 }
