@@ -154,17 +154,16 @@ h2.meta {
   padding: 20px 0;
 }
 
-dl.table {
+table.info {
 	
 }
 
-dl.table dt {
-	display: inline-block;
-	width: 200px;
+table.info tr td {
+	font-weight: bold;
 }
 
-dl.table dd {
-	display: inline-block;
+table.info tr td td {
+	padding-left: 20px;
 }
 
 #footer {
