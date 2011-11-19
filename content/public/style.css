@@ -163,6 +163,7 @@ table.info tr td {
 }
 
 table.info tr td > td {
+	font-weight: normal;
 	padding-left: 20px;
 }
 
