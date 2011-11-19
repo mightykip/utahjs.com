@@ -162,7 +162,7 @@ table.info tr td {
 	font-weight: bold;
 }
 
-table.info tr td td {
+table.info tr td > td {
 	padding-left: 20px;
 }
 
