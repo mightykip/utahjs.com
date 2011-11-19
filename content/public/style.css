@@ -154,6 +154,14 @@ h2.meta {
   padding: 20px 0;
 }
 
+dl.table {
+	
+}
+
+dl.table dt {
+	display: inline-block;
+}
+
 #footer {
   margin: 0;
   font-size: 80%;
