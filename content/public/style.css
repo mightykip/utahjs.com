@@ -160,6 +160,11 @@ dl.table {
 
 dl.table dt {
 	display: inline-block;
+	width: 200px;
+}
+
+dl.table dd {
+	display: inline-block;
 }
 
 #footer {
