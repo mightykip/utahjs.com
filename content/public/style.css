@@ -37,6 +37,12 @@ body {
   padding-bottom: 20px;
 }
 
+#social {
+	position: absolute;
+	top: 35px;
+	right: 0px;
+}
+
 #header {
   
 }
