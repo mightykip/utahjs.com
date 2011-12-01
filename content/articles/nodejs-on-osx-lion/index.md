@@ -42,8 +42,8 @@ Pull up your britches on and get your Terminal on!
 
 As long as you don't end up with `0.3`, you've probably got NodeJS installed correctly.
 
-7. Code Well
+Code Well and Prosper
 
-    <%= code 'example.js' %>
+<%= code 'example.js' %>
 
 [iTerm]: http://iterm2.com
