@@ -13,7 +13,12 @@ Contributing is easy. The website is built on [nanoc][nanoc], a static site
 compiler.  Contributing is as easy as adding a member profile yaml file,
 and then writing an article in markdown.
 
-1.  Fork the repository, check out a new branch off of master.
+1.  Fork the repository (or ask for push/pull access on the mailing list), check out a new branch off of master.
+
+        git clone git@github.com:UtahJS/utahjs.com
+        cd utahjs.com
+        git checkout master
+        git checkout -b my-articles
 
 2.  Add your member profile to `content/members`. It should look something
     like this:
@@ -48,7 +53,19 @@ and then writing an article in markdown.
         article-name.haml -> filtered with haml
         article-name.html -> not filtered
 
-4.  Push to your repository and send a pull request.
+4.  Push to the repository (and perhaps send a pull request).
+
+        git add content/members/First\ Last.yml
+        git commit -m 'added "First Last" as member'
+        
+        git add content/articles/my-article.md
+        git commit -m 'added "My Article"'
+        
+        git checkout master
+        git pull
+        
+        git merge my-article
+        git push
 
 You can look at `articles/example` to see how to use some of the helpers.
 

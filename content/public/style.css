@@ -37,6 +37,12 @@ body {
   padding-bottom: 20px;
 }
 
+#social {
+	position: absolute;
+	top: 35px;
+	right: 20px;
+}
+
 #header {
   
 }
@@ -238,7 +244,7 @@ a:hover {
 
 
 iframe {
-    border: solid 1px;
+    border: solid 0px;
 }
 
 #members {
