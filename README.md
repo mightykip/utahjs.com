@@ -15,13 +15,18 @@ and then writing an article in markdown.
 
 1.  Fork the repository (or ask for push/pull access on the mailing list), check out a new branch off of master.
 
+        # If you have push/pull access
         git clone git@github.com:UtahJS/utahjs.com
+        
+        # If you don't
+        git clone git://github.com/UtahJS/utahjs.com
+        
         cd utahjs.com
         git checkout master
         git checkout -b my-articles
 
 2.  Add your member profile to `content/members`. It should look something
-    like this:
+    like `content/members/Ryan Florence.yml`:
 
         name: Ryan Florence
         email: your.email@ddress.com
@@ -52,6 +57,8 @@ and then writing an article in markdown.
         article-name.md -> filtered with markdown
         article-name.haml -> filtered with haml
         article-name.html -> not filtered
+
+    Check out `content/articles/example/index.md`
 
 4.  Push to the repository (and perhaps send a pull request).
 
