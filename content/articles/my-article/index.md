@@ -1,26 +1,10 @@
 --- 
-title: Krazy Komments
-author: Kip
-date: 2011-12-01
----
-
-header
-===
-
-subheader
+title: Example page for authoring articles
+author: Ryan Florence
+date: 2011-07-01
 ---
 
 If your article has assets, create a folder like this one and stick them there, and name the article index.
-
-this is a separate paragraph
-this is not
-
-  * l;kj;lkj
-  * lkj;ljk
-  
-     this is code
-
-  1. lkjklj;klj
 
 Code Blocks
 -----------
